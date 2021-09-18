@@ -12,7 +12,7 @@ namespace Kolko_I_Krzyzyk
         int id;
         string name;
         public int points = 0;
-        bool twójRuch = false;
+        bool yourTurn = false;
 
         public Player()
         {
@@ -28,10 +28,10 @@ namespace Kolko_I_Krzyzyk
                 else name = value;
             }
         }
-        public bool TwójRuch
+        public bool YourTurn
         {
-            get => twójRuch;
-            set => twójRuch = value;
+            get => yourTurn;
+            set => yourTurn = value;
         }
     }
 }

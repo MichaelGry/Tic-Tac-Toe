@@ -90,8 +90,8 @@ namespace Kolko_I_Krzyzyk
             bool play = true;
             (p1.Name, p2.Name) = SetNames();
             Random rmd = new Random();
-            _ = ((rmd.Next(2)) == 0) ? (p1.TwójRuch = true) : (p2.TwójRuch = true);
-            //board[0, 0] = p1.TwójRuch == true ? 2 : 3;
+            _ = ((rmd.Next(2)) == 0) ? (p1.YourTurn = true) : (p2.YourTurn = true);
+            //board[0, 0] = p1.YourTurn == true ? 2 : 3;
             Board board1 = new Board(x, o, (int[,])board.Clone());
             while (play)
             {
